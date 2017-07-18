@@ -35,7 +35,7 @@ class Solution(object):
 a = Solution()
 print(a.letterCombinations(''))
 print(a.letterCombinations('23'))
-print(len(a.letterCombinations('4592')))
+print(a.letterCombinations('4592'))
 
 
 

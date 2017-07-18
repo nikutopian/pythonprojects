@@ -7,6 +7,7 @@ class Solution(object):
         jump = [[0] * 9 for _ in range(9)]
 
         grid = [list(range(i, i+3)) for i in range(0,7,3)]
+        print(grid)
 
         for i in range(3):
             for j in range(3):
@@ -57,4 +58,5 @@ class Solution(object):
         return ways1
 
 a = Solution()
+print(a.numberOfPatterns(1,1))
 print(a.numberOfPatterns(1,2))

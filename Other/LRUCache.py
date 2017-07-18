@@ -154,9 +154,11 @@ class LRUCache(object):
 
 
 cache = LRUCache(2)
-print(cache.put(2,1))
+print(cache.put(2,2))
 print(cache.put(1,1))
-print(cache.put(2,3))
-print(cache.put(4,1))
+print(cache.put(3,3))
 print(cache.get(1))
+print(cache.put(4,4))
+print(cache.get(3))
 print(cache.get(2))
+print(cache.get(4))

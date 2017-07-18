@@ -6,6 +6,8 @@ class TreeNode(object):
         self.right = None
 
 class Solution(object):
+
+
     def get_traversal_list(self, root, p, t_list):
 
         if root == None:

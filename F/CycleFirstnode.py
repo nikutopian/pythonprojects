@@ -13,21 +13,17 @@ class Solution:
     def detectCycle(self, A):
         p1 = self.next(A)
         p2 = self.next(self.next(A))
-        count = 0
         while p1 != p2:
             p1 = self.next(p1)
             p2 = self.next(self.next(p2))
-            count += 1
 
         if p1 is not None and p2 is not None and p1 == p2:
 
             p1 = A
-            circlecount = 0
 
             while p1 != p2:
                 p1 = self.next(p1)
                 p2 = self.next(p2)
-                circlecount += 1
 
             return p1
 
@@ -49,7 +45,7 @@ def getlist(arr):
     return headnode
 
 b = getlist([1,2,3,4,5,6,7])
-b.next.next.next.next.next.next.next = b.next.next.next.next.next.next
+b.next.next.next.next.next.next.next = b.next.next.next.next
 
 res = a.detectCycle(b)
 print(res.val)
